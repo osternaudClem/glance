@@ -1,0 +1,83 @@
+- name: Home
+  width: wide
+  center-vertically: true
+  columns:
+    - size: small
+      widgets:
+        - type: weather
+          location: Egly, France
+          units: metric # alternatively "imperial"
+          hour-format: 12h # alternatively "24h"
+
+        - type: calendar
+          first-day-of-week: monday
+
+        - type: rss
+          limit: 10
+          collapse-after: 3
+          cache: 12h
+          feeds:
+            - url: https://selfh.st/rss/
+              title: selfh.st
+            - url: https://ciechanow.ski/atom.xml
+            - url: https://www.joshwcomeau.com/rss.xml
+              title: Josh Comeau
+            - url: https://samwho.dev/rss.xml
+            - url: https://ishadeed.com/feed.xml
+              title: Ahmad Shadeed
+
+    - size: full
+      widgets:
+        - type: search
+          autofocus: true
+        - type: group
+          widgets:
+            - type: hacker-news
+            - type: lobsters
+
+        - type: group
+          widgets:
+            - type: reddit
+              subreddit: coolify
+              show-thumbnails: true
+            - type: reddit
+              subreddit: selfhosted
+              show-thumbnails: true
+            - type: reddit
+              subreddit: hyprland
+              show-thumbnails: true
+
+    - size: small
+      widgets:
+        - type: to-do
+          items:
+            - title: "Add more widgets"
+              done: false
+            - title: "Check out Glance's documentation"
+              done: true
+            - title: "Contribute to Glance on GitHub"
+              done: false
+        - type: server-stats
+          servers:
+            - type: local
+              name: Services
+
+        - type: monitor
+          cache: 1m
+          title: Services
+          sites:
+            - title: Coolify
+              url: https://coolify.cl3tusdev.com/
+              icon: sh:coolify
+            - title: Azelysse
+              url: https://azelysse.fr
+              icon: https://azelysse.fr/favicon.png
+            - title: Azelysse API
+              url: https://api.azelysse.fr/flash/now
+              icon: https://azelysse.fr/favicon.png
+            - title: Blindtus
+              url: https://blindtus.com/
+              icon: https://blindtus.com/favicon.ico
+            - title: Open WebUI
+              url: https://ai.cl3tusdev.com/
+              icon: sh:open-webui

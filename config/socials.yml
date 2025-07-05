@@ -1,0 +1,33 @@
+- name: Socials
+  width: wide
+  hide-desktop-navigation: false
+  center-vertically: false
+  columns:
+    - size: small
+      widgets:
+        - type: twitch-channels
+          channels:
+            - zerator
+            - berlu
+    - size: full
+      widgets:
+        - type: group
+          widgets:
+            - type: videos
+              title: Tech
+              style: grid-cards
+              channels:
+                - UCLOAPb7ATQUs_nDs9ViLcMw # Benjamin Code
+                - UC44qdJgVvPEaEaojOUZpp9A # Benjamin Code Plus
+                - UCj_iGliGCkLcHSZ8eqVNPDQ # Grafikart.fr
+                - UCyU5wkjgQYGRB0hIHMwm2Sg # Syntax
+            - type: videos
+              title: Entertainment
+              style: grid-cards
+              channels:
+                - UCU0FhLr6fr7U9GOn6OiQHpQ # DEFAKATOR
+                - UCYcJNtSv9jSCB0tWMb09O_Q # euuhhh
+                - UCNiauGTV7XhkOpUAIXod4xA # Léo Duff
+                - UC-lHJZR3Gqxm24_Vd_AJ5Yw # PewDiePie
+                - UCMQSwUNSnMOP4IRysfeg8EA # Simon Puech
+                - UC2ruguOcwnVR2_4DtiGnmLg # TheGreatReview

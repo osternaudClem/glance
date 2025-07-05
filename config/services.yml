@@ -1,0 +1,68 @@
+- name: Services
+  width: wide
+  hide-desktop-navigation: false
+  center-vertically: false
+  columns:
+    - size: full
+      widgets:
+        - type: twitch-channels
+          channels:
+            - zerator
+            - berlu
+
+        - type: monitor
+          cache: 1m
+          title: Services
+          sites:
+            - title: Coolify
+              url: https://coolify.cl3tusdev.com/
+              icon: sh:coolify
+            - title: Gitea
+              url: https://yourdomain.com/
+              icon: si:gitea
+            - title: qBittorrent # only for Linux ISOs, of course
+              url: https://yourdomain.com/
+              icon: si:qbittorrent
+            - title: Immich
+              url: https://yourdomain.com/
+              icon: si:immich
+            - title: AdGuard Home
+              url: https://yourdomain.com/
+              icon: si:adguard
+            - title: Vaultwarden
+              url: https://yourdomain.com/
+              icon: si:vaultwarden
+        - type: videos
+          channels:
+            - UCXuqSBlHAE6Xw-yeJA0Tunw # Linus Tech Tips
+            - UCR-DXc1voovS8nhAvccRZhg # Jeff Geerling
+            - UCsBjURrPoezykLs9EqgamOA # Fireship
+            - UCBJycsmduvYEL83R_U4JriQ # Marques Brownlee
+            - UCHnyfMqiRRG1u-2MsSQLbXA # Veritasium
+
+        - type: bookmarks
+          groups:
+            - title: General
+              links:
+                - title: Gmail
+                  url: https://mail.google.com/mail/u/0/
+                - title: Amazon
+                  url: https://www.amazon.com/
+                - title: Github
+                  url: https://github.com/
+            - title: Entertainment
+              links:
+                - title: YouTube
+                  url: https://www.youtube.com/
+                - title: Prime Video
+                  url: https://www.primevideo.com/
+                - title: Disney+
+                  url: https://www.disneyplus.com/
+            - title: Social
+              links:
+                - title: Reddit
+                  url: https://www.reddit.com/
+                - title: Twitter
+                  url: https://twitter.com/
+                - title: Instagram
+                  url: https://www.instagram.com/

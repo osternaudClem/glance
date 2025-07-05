@@ -1,0 +1,21 @@
+server:
+  assets-path: /app/assets
+
+auth:
+  secret-key: t4WNyiDR6bFJOSWKeKBJ+2TiJer2p2W62nzLarqcm/VTg+qAsKRCG/rHqfesfONUWHiPWhrzhtGRvWWVV63utA==
+  users:
+    cletus:
+      password-hash: $2a$10$SRtKmx1IhyCsf1.g5C/fV.5ZGcBJbdWHHEp9q1uA5vLh4Zb0NXEOy
+
+theme:
+  background-color: 240 21 15
+  contrast-multiplier: 1.2
+  primary-color: 217 92 83
+  positive-color: 115 54 76
+  negative-color: 347 70 65
+  custom-css-file: /assets/user.css
+
+pages:
+  - $include: home.yml
+  - $include: services.yml
+  - $include: socials.yml
